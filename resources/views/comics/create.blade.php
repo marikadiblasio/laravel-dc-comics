@@ -32,7 +32,7 @@
             <div class="row mb-3">
                 <div class="col">
                     <label for="sale_date" class="form-label">Inserisci la data di uscita</label>
-                    <input type="text" class="form-control" id="sale_date" name="sale_date"
+                    <input type="date" class="form-control" id="sale_date" name="sale_date"
                         placeholder="Inserisci qui la data di uscita">
                 </div>
                 <div class="col">
@@ -49,6 +49,7 @@
                 <label for="writers" class="form-label">Inserisci lo scrittore/gli scrittori</label>
                 <textarea class="form-control" id="writers" name="writers" rows="5"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary">Inserisci</button>
         </form>
     </div>
 @endsection

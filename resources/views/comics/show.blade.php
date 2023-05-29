@@ -57,11 +57,14 @@
                                 <tbody>
                                     <tr class="border-bottom border-secondary">
                                         <th class="w-25 pb-4" scope="row">Art by:</th>
-                                        <td class="text-info small">{{ implode(',', $comic->artists) }}</td>
+                                        <td class="text-info small">{{$comic->artists}}</td>
+                                        {{-- <td class="text-info small">{{ implode(',', $comic->artists) }}</td> --}}
+
                                     </tr>
                                     <tr class="border-bottom border-secondary">
                                         <th class="w-25 pb-4" scope="row">Written by:</th>
-                                        <td class="text-info small">{{ implode(',', $comic->writers) }}</td>
+                                        <td class="text-info small">{{  $comic->writers }}</td>
+                                        {{-- <td class="text-info small">{{ implode(',', $comic->writers) }}</td> --}}
                                     </tr>
                                 </tbody>
                             </table>
