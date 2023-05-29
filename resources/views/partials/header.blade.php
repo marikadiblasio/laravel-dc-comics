@@ -1,7 +1,7 @@
 <header class="bg-white">
     <div class="container d-flex justify-content-between align-items-center">
         <div>
-            <img class="img-fluid" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo">
+            <a href="{{route('home')}}"><img class="img-fluid" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo"></a>
         </div>
         <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
