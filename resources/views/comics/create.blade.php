@@ -50,6 +50,7 @@
                 <textarea class="form-control" id="writers" name="writers" rows="5"></textarea>
             </div>
             <button type="submit" class="btn btn-primary mb-3">Inserisci</button>
+            <button type="reset" class="btn btn-danger mb-3">Annulla</button>
         </form>
     </div>
 @endsection
