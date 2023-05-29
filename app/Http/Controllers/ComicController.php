@@ -14,19 +14,18 @@ class ComicController extends Controller
     public function index()
     {
         $data = [
-            Comic::all()
+            'comics' => Comic::all()
         ];
-        return
+        return view('comics.index', $data);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -37,18 +36,17 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Comic  $comic
-     * @return \Illuminate\Http\Response
      */
     public function show(Comic $comic)
     {
-        //
+        return view('comics.show', compact('comic'));
     }
 
     /**

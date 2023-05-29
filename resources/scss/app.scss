@@ -170,3 +170,7 @@ img {
     align-content: center;
     flex-wrap: wrap;
 }
+
+.my-form-height{
+    height: calc(100vh - (20vh + 90px + 55px));
+}

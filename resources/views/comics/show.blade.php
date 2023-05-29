@@ -77,15 +77,15 @@
                                 <tbody>
                                     <tr class="border-bottom border-secondary">
                                         <th class="pb-4" scope="row">Series</th>
-                                        <td class="text-info small">{{ $comic->'series' }}</td>
+                                        <td class="text-info small">{{ $comic->series }}</td>
                                     </tr>
                                     <tr class="border-bottom border-secondary">
                                         <th class="pb-4" scope="row">U.S.Price</th>
-                                        <td class="text-info small">{{ $comic->'price' }}</td>
+                                        <td class="text-info small">{{ $comic->price }}</td>
                                     </tr>
                                     <tr class="border-bottom border-secondary">
                                         <th class="pb-4" scope="row">On Sale Date:</th>
-                                        <td class="text-info small">{{ $comic->'sale_date' }}</td>
+                                        <td class="text-info small">{{ $comic->sale_date }}</td>
                                     </tr>
                                 </tbody>
                             </table>
