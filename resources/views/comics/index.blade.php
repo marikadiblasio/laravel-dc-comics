@@ -2,12 +2,13 @@
 
 
 @section('content')
-    <div class="wrapper ">
+    <div class="wrapper">
         <div class="hero position-relative">
             <img src="/images/jumbotron.jpg" alt="hero">
             <button class="text-uppercase fw-bold fs-5 btn btn-primary rounded-0">Current Series</button>
         </div>
         <div class="bg-black">
+            <a class="btn btn-primary my-fixed" href="{{route('comics.create')}}">Aggiungi un nuovo fumetto</a>
             <div class="container  h-100 text-white">
                 <div class="row mx-auto">
                     @foreach ($comics as $comic)

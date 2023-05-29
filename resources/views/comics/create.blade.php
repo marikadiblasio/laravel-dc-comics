@@ -49,7 +49,7 @@
                 <label for="writers" class="form-label">Inserisci lo scrittore/gli scrittori</label>
                 <textarea class="form-control" id="writers" name="writers" rows="5"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Inserisci</button>
+            <button type="submit" class="btn btn-primary mb-3">Inserisci</button>
         </form>
     </div>
 @endsection

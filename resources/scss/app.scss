@@ -175,3 +175,7 @@ img {
     height: calc(100vh - (20vh + 90px + 55px));
     overflow-y: auto;
 }
+.my-fixed{
+    position: fixed;
+    right: 300px;
+}
