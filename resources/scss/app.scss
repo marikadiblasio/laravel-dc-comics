@@ -104,7 +104,7 @@ img {
     width: 100%;
 }
 }
- //Detail page
+ //Detail page (show)
  .show-comic{
     height: calc(100vh - (20vh + 90px + 55px));
      overflow-y: auto;
@@ -171,6 +171,7 @@ img {
     flex-wrap: wrap;
 }
 
+//Form (create)
 .my-form-height{
     height: calc(100vh - (20vh + 90px + 55px));
     overflow-y: auto;

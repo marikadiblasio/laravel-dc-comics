@@ -8,20 +8,20 @@
             <button class="text-uppercase fw-bold fs-5 btn btn-primary rounded-0">Current Series</button>
         </div>
         <div class="bg-black">
-            <a class="btn btn-primary my-fixed" href="{{route('comics.create')}}">Aggiungi un nuovo fumetto</a>
+            <a class="btn btn-primary my-fixed" href="{{ route('comics.create') }}">Aggiungi un nuovo fumetto</a>
             <div class="container  h-100 text-white">
                 <div class="row mx-auto">
                     @foreach ($comics as $comic)
-                    <div class="col-12 col-md-4 col-lg-2 text-center">
-                        <img class="my-card-img" src="{{ $comic->thumb}}" alt="{{$comic->title}}">
-                        <a href="{{ route('comics.show', $comic->id) }}" class="text-white text-decoration-none">
-                            <div class="text-uppercase small py-2">
-                                {{ $comic->title}}
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
+                        <div class="col-12 col-md-4 col-lg-2 text-center">
+                            <img class="my-card-img" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+                            <a href="{{ route('comics.show', $comic->id) }}" class="text-white text-decoration-none">
+                                <div class="text-uppercase small py-2">
+                                    {{ $comic->title }}
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
                 <button class="text-uppercase mx-auto d-block btn btn-primary rounded-0">Load More</button>
             </div>
         </div>
