@@ -2,6 +2,11 @@
 
 
 @section('content')
+    @if (session()->has('message'))
+    <div class="alert alert-success">
+        {{session()->get('message')}}
+    </div>
+    @endif
     <div class="wrapper">
         <div class="hero position-relative">
             <img src="/images/jumbotron.jpg" alt="hero">

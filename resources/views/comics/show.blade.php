@@ -3,7 +3,7 @@
     {{ $comic->title }}
 @endsection
 @section('content')
-    {{-- <h3>{{ $comic['title'] }}</h3> --}}
+
     <div class="show-comic">
         <div class="hero position-relative">
             <img class="jumbo" src="/images/jumbotron.jpg" alt="hero">
@@ -94,6 +94,14 @@
                             </table>
                         </div>
                     </div>
+                    <div class="d-flex">
+                    <a href="{{route('comics.edit', $comic->id)}}" class="btn me-3 btn-warning">Modifica elemento</a>
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Elimina</button>
+                    </form>
+                </div>
                 </div>
                 <div class="border-top border-secondary">
                     <div class="container">
