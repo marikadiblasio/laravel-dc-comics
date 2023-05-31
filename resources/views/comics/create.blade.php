@@ -2,6 +2,13 @@
 
 @section('content')
     <div class="my-form-height container">
+        @if ($errors->any())
+            <div>
+            @foreach ($errors->all() as $error)
+                {{ $error }}
+            @endforeach
+            </div>
+        @endif
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf
             <h3 class="py-3 text-center text-primary">Inserisci un nuovo fumetto</h3>
